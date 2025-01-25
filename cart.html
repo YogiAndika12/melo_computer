@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melo Computer</title>
+    <!-- Ini Link Menuju Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Ini Link Menuju Style Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive/responsive.css">
+    <!-- Ini Link Menuju remixicon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css">
+    <!-- Ini Link Menuju Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+<body>
+<!-- Bagian header-->
+<header class="header" id="header">
+   <nav class="nav container">
+      <a href="main.html" class="nav__logo">Melo Computer</a>
+
+      <div class="nav__menu" id="nav-menu">
+         <ul class="nav__list">
+            <li class="nav__item">
+               <a href="#" class="nav__link">Beranda</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="produk.html" class="nav__link">Produk</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="#" class="nav__link">Tentang Kami</a>
+            </li>
+
+            <li class="nav__item">
+               <a href="#" class="nav__link">Kontak Kami</a>
+            </li>
+         </ul>
+
+         <!-- Tombol Close -->
+         <div class="nav__close" id="nav-close">
+            <i class="ri-close-line"></i>
+         </div>
+      </div>
+
+      <div class="nav__actions">
+         <!-- Tombol Cari -->
+         <i class="ri-search-line nav__search" id="search-btn"></i>
+
+         <!-- Tombol Login -->
+         <i class="ri-user-line nav__login" id="login-btn"></i>
+        <!-- Tombol Keranjang -->
+         <a href="cart.html"> <i class="ri-shopping-cart-line nav__cart" ></i></a>
+       
+         <!-- Toggle button -->
+         <div class="nav__toggle" id="nav-toggle">
+            <i class="ri-menu-line"></i>
+         </div>
+      </div>
+   </nav>
+</header>
+
+<!-- Section Search-->
+<div class="search" id="search">
+   <form action="" class="search__form">
+      <i class="ri-search-line search__icon"></i>
+      <input type="search" placeholder="Apa Yang Kamu Cari?" class="search__input">
+   </form>
+
+   <i class="ri-close-line search__close" id="search-close"></i>
+</div>
+
+<!--Section Login-->
+<div class="login" id="login">
+   <form action="" class="login__form">
+      <h2 class="login__title">Masuk</h2>
+      
+      <div class="login__group">
+         <div>
+            <label for="email" class="login__label">Email</label>
+            <input type="email" placeholder="Masukan Email Anda" id="email" class="login__input">
+         </div>
+         
+         <div>
+            <label for="password" class="login__label">Password</label>
+            <input type="password" placeholder="Masukan Password" id="password" class="login__input">
+         </div>
+      </div>
+
+      <div>
+         <p class="login__signup">
+            Belum Punya Akun? <a href="register.html">Registrasi</a>
+         </p>
+
+         <a href="#" class="login__forgot">
+            Lupa Passsword
+         </a>
+
+         <button type="submit" class="login__button">Masuk</button>
+      </div>
+   </form>
+
+   <i class="ri-close-line login__close" id="login-close"></i>
+</div>
+
+<!-- Main Container-->
+<main class="main-container">
+   <div class="wrapper">
+    <!-- hero image -->
+    <div class="list-section">
+        <h1>Keranjang Anda</h1>
+    </div>
+        <div class="container_cart">
+          <div class="cart">
+            <div class="cart_header">
+              <p class="cart_header_id">Product ID</p>
+              <p class="cart_header_title">Product Title</p>
+              <p class="cart_header_image">Product Image</p>
+              <p class="cart_header_price">Price</p>
+              <p class="cart_header_delete">Delete</p>
+            </div>
+            <div class="cart-items"></div>
+          </div>
+        </div>
+    
+      <!-- Terlaris -->
+
+      <div class="list-section">
+        <h1>Produk Terkait</h1>
+      </div>
+    
+    <!-- Menu Terbaru -->
+    <div class="card-list">
+      <div class="card-container">
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Card Image">
+            <span class="developer">Developer</span>
+            <h3>A "developer" codes software and websites.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+      </div>
+      <div class="card-container">
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Card Image">
+            <span class="developer">Developer</span>
+            <h3>A "developer" codes software and websites.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+      </div>
+      <div class="card-container">
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Card Image">
+            <span class="developer">Developer</span>
+            <h3>A "developer" codes software and websites.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+      </div>
+      <div class="card-container">
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Card Image">
+            <span class="developer">Developer</span>
+            <h3>A "developer" codes software and websites.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+      </div>
+      <div class="card-container">
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Card Image">
+            <span class="developer">Developer</span>
+            <h3>A "developer" codes software and websites.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+      </div>
+      <div class="card-container">
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Card Image">
+            <span class="developer">Developer</span>
+            <h3>A "developer" codes software and websites.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+      </div>
+      <div class="card-container">
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Card Image">
+            <span class="developer">Developer</span>
+            <h3>A "developer" codes software and websites.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+      </div>
+      <div class="card-container">
+        <a href="#" class="card-item">
+            <img src="https://images.unsplash.com/photo-1535359056830-d4badde79747?ixlib=rb-1.2.1&auto=format&fit=crop&w=3402&q=80" alt="Card Image">
+            <span class="developer">Developer</span>
+            <h3>A "developer" codes software and websites.</h3>
+            <div class="arrow">
+                <i class="fas fa-arrow-right card-icon"></i>
+            </div>
+        </a>
+      </div>
+      
+    
+  </div>
+</main>
+
+
+<!-- Footer Section  -->
+<footer class="footer">
+   <div class="main-content">
+    <!-- left box -->
+     <div class="left box">
+       <h2>About us</h2>
+       <div class="content">
+         <p>website penjualan laptop dan printer yang diberi nama Melo Computer. Website ini dirancang untuk mempermudah konsumen di Bali dalam mendapatkan produk berkualitas tanpa harus datang langsung ke toko fisik. Selain itu, Melo Computer bertujuan memberikan pengalaman berbelanja yang nyaman, cepat, dan aman.</p>
+         <div class="social">
+           <a href="https://facebook.com/coding.np"><span class="fab fa-facebook-f"></span></a>
+           <a href="https://facebook.com/coding.np"><span class="fab fa-whatsapp"></span></a>
+           <a href="https://instagram.com/coding.np"><span class="fab fa-instagram"></span></a>
+           <a href="https://youtube.com/c/codingnepal"><span class="fab fa-youtube"></span></a>
+         </div>
+       </div>
+     </div>
+
+     <!-- center box -->
+     <div class="center box">
+       <h2>Kontak Kami</h2>
+       <div class="content">
+         <div class="place">
+           <span class="fas fa-map-marker-alt"></span>
+           <span class="text">Sibangakaja, Abiansemal,Badung</span>
+         </div>
+         <div class="phone">
+           <span class="fas fa-phone-alt"></span>
+           <span class="text">+62-81324645788</span>
+         </div>
+         <div class="email">
+           <span class="fas fa-envelope"></span>
+           <span class="text">melo@gmail.com</span>
+         </div>
+       </div>
+     </div>
+
+     <!-- right box -->
+     <div class="right box">
+       <h2>Keluhan</h2>
+       <div class="content">
+         <form action="#" class="coment">
+           <div class="email">
+             <div class="text">Email</div>
+             <input type="email" required>
+           </div>
+           <div class="msg">
+             <div class="text">Keluhan</div>
+             <textarea rows="2" cols="25" required></textarea>
+           </div>
+           <div class="btn">
+             <button type="submit">Send</button>
+           </div>
+         </form>
+       </div>
+     </div>
+   </div>
+   
+ </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
